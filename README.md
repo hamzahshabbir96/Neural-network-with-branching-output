@@ -24,7 +24,38 @@ pip install DeepNeuralBranchNet
 
 ## Example of how to use
 
+Import module 
+```
+from DeepNeuralBranchNet import neuralnet
+```
+Initiate the neural network object class
 
 ```
-pip install DeepNeuralBranchNet
+example=NeuralNet()
+```
+Add input by passing number of nput features as parameter
+```
+example.add_input(input_length=16)
+```
+
+Add layer sequentially by passing number of neurons and activation function
+```
+example.add_layer(10,activation_function="relu")
+```
+If you want to add multiple output(or opting for branching), then trigger branching by following line of code and then keep adding layers
+```
+example.do_branching()
+```
+
+Run model to update parameters such as weights and bias and for training.
+- input_array : Input matrix in the form of array
+- output_array : Output matrix in the form of array
+- number_of_iterations : Total number of times you want to run back propagations to update weights
+- multiple_output : If you have branches then set it to True
+```
+example.run_model(input_array,output_array, number_of_iterations=1000, learning_rate=0.001, multiple_output=False)
+```
+Finally predict by calling predict method
+```
+example.predict()
 ```
