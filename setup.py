@@ -19,17 +19,19 @@ setuptools.setup(
   packages=setuptools.find_packages(),
   install_requires=['numpy','math'],
   long_description=long_description,
-  long_description_context_type='text/markdown',
+  long_description_content_type='text/markdown',
   keywords=['Neural Network','Classification','Python','Neurons','layers'],
    classifiers=[
-          'Development Status :: 1 - Planning',
+          'Development Status :: 2 - Pre-Alpha',
           'Intended Audience :: Developers',
           'Operating System :: OS Independent',
           'Programming Language :: Python',
           'Programming Language :: Python :: 2',
           'Programming Language :: Python :: 3',
           'Topic :: Software Development',
-          'Topic :: Deep Neural network',
+          'Topic :: Scientific/Engineering :: Artificial Intelligence',
+          'Topic :: Scientific/Engineering',
+       'Topic :: Scientific/Engineering :: Artificial Life',
       ]
   
 
