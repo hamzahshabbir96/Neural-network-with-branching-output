@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
   include_package_data=False,
-  name='MyDeepNet',
+  name='DeepNeuralBranchNet',
   version='0.0.1',
   url='https://github.com/hamzahshabbir96/Neural-network-with-branching-output',
   description='Neural network module with branching output'
