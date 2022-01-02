@@ -13,7 +13,7 @@ setuptools.setup(
   name='DeepNeuralBranchNet',
   version='0.0.12',
   url='https://github.com/hamzahshabbir96/Neural-network-with-branching-output',
-  description='Neural network module with branching output'
+  description='Neural network module with branching output',
   author='Hamzah Shabbir',
   author_email='hamzahshabbir7@gmail.com',
   packages=setuptools.find_packages(),
