@@ -1,21 +1,28 @@
 import setuptools
+import codecs
+import os
 
+here = os.path.abspath(os.path.dirname(__file__))
+
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+    long_description = "\n" + fh.read()
+    
+    
 setuptools.setup(
   include_package_data=False,
   name='DeepNeuralBranchNet',
-  version='0.0.1',
+  version='0.0.12',
   url='https://github.com/hamzahshabbir96/Neural-network-with-branching-output',
   description='Neural network module with branching output'
   author='Hamzah Shabbir',
   author_email='hamzahshabbir7@gmail.com',
   packages=setuptools.find_packages(),
   install_requires=['numpy','math'],
-  long_description='A neural network modeule which allows to branch out multiple output at different layers for classification with customizable layers and options of choosing hyperparameters ',
+  long_description=long_description,
   long_description_context_type='text/markdown',
   keywords=['Neural Network','Classification','Python','Neurons','layers'],
    classifiers=[
-          'Development Status :: Planning',
-          'Environment :: Win32 (MS Windows)',
+          'Development Status :: 1 - Planning',
           'Intended Audience :: Developers',
           'Operating System :: OS Independent',
           'Programming Language :: Python',
